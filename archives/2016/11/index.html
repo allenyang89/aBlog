@@ -196,16 +196,6 @@
         </li>
       
         
-        <li class="menu-item menu-item-about">
-          <a href="/about" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            About
-          </a>
-        </li>
-      
-        
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
@@ -277,9 +267,9 @@
 
       <h1 class="post-title">
         
-            <a class="post-title-link" href="/2016/11/17/hello-world/" itemprop="url">
+            <a class="post-title-link" href="/2016/11/16/first_post/" itemprop="url">
               
-                <span itemprop="name">Hello World</span>
+                <span itemprop="name">第一篇</span>
               
             </a>
         
@@ -287,7 +277,7 @@
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
-              datetime="2016-11-17T11:18:19+08:00"
+              datetime="2016-11-17T06:07:59+08:00"
               content="2016-11-17" >
           11-17
         </time>
@@ -348,7 +338,21 @@
           </div>
 
           
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">categories</span>
+              </a>
+            </div>
+          
 
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
           
 
         </nav>
@@ -515,10 +519,28 @@
 
   
 
+    <script type="text/javascript">
+      var disqus_shortname = 'allenyang89';
+      var disqus_identifier = 'archives/2016/11/index.html';
+
+      var disqus_title = "";
 
 
+      function run_disqus_script(disqus_script) {
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
 
-	
+      run_disqus_script('count.js');
+
+      
+
+    </script>
+  
+
 
 
 
