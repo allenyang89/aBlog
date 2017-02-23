@@ -85,3 +85,6 @@ sitemap:
 baidusitemap:
     path: baidusitemap.xml
 
+# Skip files
+skip_render:
+  - README.md
