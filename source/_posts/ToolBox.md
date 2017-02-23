@@ -7,4 +7,10 @@ tags: ToolBox
 - [基础设置](https://munen.cc/tech/hexo-init.html#2-与-GitHub-建立联系)
 
 # Git
-- [Multiple Accounts of ssh Key](https://code.tutsplus.com/tutorials/quick-tip-how-to-work-with-github-and-multiple-accounts--net-22574)
+- [Multiple ssh keys](https://code.tutsplus.com/tutorials/quick-tip-how-to-work-with-github-and-multiple-accounts--net-22574)
+
+# Ruby
+- 二进制转换
+```
+9.to_s(2) #=> "1001"; "1001".to_i(2) #=> 9
+```
