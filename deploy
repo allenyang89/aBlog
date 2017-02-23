@@ -1,3 +1,4 @@
+git push origin code
 hexo clean
 hexo generate
 hexo deploy
