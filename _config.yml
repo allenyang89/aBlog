@@ -79,4 +79,9 @@ deploy:
   name: allenY
   email: allenyang89@hotmail.com
 
+# Site Map
+sitemap:
+    path: sitemap.xml
+baidusitemap:
+    path: baidusitemap.xml
 
