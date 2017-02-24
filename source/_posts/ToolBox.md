@@ -10,7 +10,13 @@ tags: ToolBox
 - [Multiple ssh keys](https://code.tutsplus.com/tutorials/quick-tip-how-to-work-with-github-and-multiple-accounts--net-22574)
 
 # Ruby
-- 二进制转换
+- 二进制转换(binary <=> int)
 ```
 9.to_s(2) #=> "1001"; "1001".to_i(2) #=> 9
+```
+
+# Rails
+- 识别 Controller by path
+```
+Rails.application.routes.recognize_path(request.referrer)
 ```
