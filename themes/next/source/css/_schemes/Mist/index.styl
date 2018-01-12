@@ -11,6 +11,7 @@
 @import "_posts-expanded";
 @import "sidebar/sidebar-blogroll";
 
+
 // Components
 // --------------------------------------------------
 .btn {
@@ -19,9 +20,8 @@
   border-radius: 0;
 }
 
-.headband {
-  display: none;
-}
+.headband { display: none; }
+
 
 // Search
 // --------------------------------------------------
@@ -37,30 +37,25 @@
   }
 }
 
+
 // Page - Container
 // --------------------------------------------------
 .container .main-inner {
-  +mobile() {
-    width: auto;
-  }
+  +mobile() { width: auto; }
 }
+
 
 // Page - Post details
 // --------------------------------------------------
 .page-post-detail {
   .post-title,
-  .post-meta {
-    text-align: center;
-  }
+  .post-meta { text-align: center; }
 
-  .post-title:before {
-    display: none;
-  }
+  .post-title:before { display: none; }
 
-  .post-meta {
-    margin-bottom: 60px;
-  }
+  .post-meta { margin-bottom: 60px; }
 }
+
 
 // Pagination
 // --------------------------------------------------
@@ -82,7 +77,6 @@
   background: $whitesmoke;
   color: $grey-dim;
 }
-
 .footer-inner {
   margin: 0 auto;
   text-align: left;

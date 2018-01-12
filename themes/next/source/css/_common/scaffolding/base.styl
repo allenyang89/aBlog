@@ -12,15 +12,9 @@ body {
   color: $text-color;
   background: $body-bg-color;
 
-  +mobile() {
-    padding-right: 0 !important;
-  }
-  +tablet() {
-    padding-right: 0 !important;
-  }
-  +desktop-large() {
-    font-size: $font-size-large;
-  }
+  +mobile() { padding-right: 0 !important; }
+  +tablet() { padding-right: 0 !important; }
+  +desktop-large() { font-size: $font-size-large; }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -31,9 +25,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $font-family-headings;
 }
 
-h2, h3, h4, h5, h6 {
-  margin: 20px 0 15px;
-}
+h2, h3, h4, h5, h6 { margin: 20px 0 15px; }
 
 for headline in (1..6) {
   h{headline} {
@@ -47,13 +39,12 @@ for headline in (1..6) {
   }
 }
 
-p {
-  margin: 0 0 25px 0;
-}
+p { margin: 0 0 20px 0; }
 
 a {
   color: $link-color;
   text-decoration: none;
+  outline: none;
   border-bottom: 1px solid $grey-dark;
   word-wrap: break-word;
 
@@ -61,10 +52,6 @@ a {
     color: $link-hover-color;
     border-bottom-color: $link-decoration-hover-color;
   }
-}
-
-ul {
-  list-style: none;
 }
 
 blockquote {
@@ -78,6 +65,7 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 
 hr {
   margin: 40px 0;
@@ -98,20 +86,26 @@ blockquote {
   color: $grey-dim;
   border-left: 4px solid $gray-lighter;
 
-  cite:
-  :before {
+  cite::before {
     content: "-";
     padding: 0 5px;
   }
 }
 
-dt {
-  font-weight: $font-weight-bolder;
-}
+dt { font-weight: $font-weight-bolder; }
 
 dd {
   margin: 0;
   padding: 0;
 }
 
-
+kbd {
+  border: 1px solid $grey-light;
+  border-radius: 0.2em;
+  box-shadow: 0.1em 0.1em 0.2em rgba(0,0,0,0.1);
+  background-color: #f9f9f9;
+  font-family: inherit;
+  background-image: -webkit-linear-gradient(top, #eee, white, #eee);
+  padding: 0.1em 0.3em;
+  white-space: nowrap;
+}

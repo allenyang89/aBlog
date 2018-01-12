@@ -12,12 +12,16 @@
   -webkit-transform: translateZ(0);
 
   +tablet() {
-    display: none;
+    fixbutton() if hexo-config('sidebar.onmobile');
+    hide() if not hexo-config('sidebar.onmobile');
   }
   +mobile() {
-    display: none;
+    fixbutton() if hexo-config('sidebar.onmobile');
+    hide() if not hexo-config('sidebar.onmobile');
   }
 }
+
+
 
 .sidebar-toggle-line {
   position: relative;
@@ -28,7 +32,5 @@
   background: white;
   margin-top: 3px;
 
-  &:first-child {
-    margin-top: 0;
-  }
+  &:first-child { margin-top: 0; }
 }
